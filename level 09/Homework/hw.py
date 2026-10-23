@@ -39,9 +39,9 @@ num1 = int(input("Guess The Digit:"))
 while num1 != secret_num :
     print("You Guessed It Wrong")
     num1 = int(input("Guess The Digit:"))
-    
+
     if num1 == secret_num:
-        print("You Guessed The Number")
+        print("You Guessed The Number")      
 
         #მომხარებელს შეყავს რიცხვი იქამდე სანამ ის მას არ გამოიცნობს 
 

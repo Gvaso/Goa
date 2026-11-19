@@ -68,7 +68,11 @@ def distinct(seq):
 
 # Return true if the array contains the value, false if not.
 def check(seq, elem):
-    return elem in seq
+    for value in seq:
+        if value == elem:
+            return True
+    
+    return False
 
 # Can you find the needle in the haystack?
 
@@ -78,7 +82,9 @@ def check(seq, elem):
 
 # "found the needle at position " plus the index it found the needle, so:
 def find_needle(haystack):
-    return "found the needle at position " + str(haystack.index("needle"))
+    for index in range(len(haystack)):
+        if haystack[index] == "needle":
+            return f"found the needle at position {index}"
 
 # Write a function that takes an array of numbers and returns the sum of the numbers. The numbers can be negative. If the array is empty, return 0.
 
